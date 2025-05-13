@@ -35,12 +35,26 @@ background-color: white;
 }
 
 nav {
-    background-color: #EC7FA9;
-    padding: 1rem 0;
-    border-bottom: 2px solid #BE5985; 
-    font-size: 30px;
+   background-color: #EC7FA9;
+    padding: 20px 0;
+    border-bottom: 2px solid #753853; 
+    font-size: 20px;
+    display: flex;
+    gap: 50px;
 }
 
+ul{
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    color: #BE5985;
+}
+h2{
+    font-size: 30px;
+    color: #BE5985;
+}
 .nav-contenedor {
     display: flex;
     justify-content: space-between;
