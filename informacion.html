@@ -1,13 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Que es la Ciberseguridad?</title>
+    <link rel="stylesheet" href="StyleInformacion.Css">
 </head>
 <body>
-    <Header>
-        <h1>Informacion</h1>
-    </Header>
+    <nav>
+        <div class="contenedor nav-contenedor">
+            <div class="logo">
+                <a href="#"><img src= "Imagenes/imagen-removebg-preview.png" alt="Logo" width="400px" height="300px"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="Index.html"><b>Inicio</b></a></li>
+                <li><a href="informacion.html"><b>información</b> </a></li> 
+                <li><a href="Noticias.html"><b>Noticias</b> </a></li>
+                <li><a href="Galeria.html"><b>Galeria</b></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Ciberseguridad para Programadores: Una Guía Completa</h1>
+
+        <div class="section">
+            <h2>Introducción a la Ciberseguridad en el Desarrollo</h2>
+            <p>La ciberseguridad es una preocupación fundamental en el mundo actual, especialmente para los programadores. Escribir código seguro no solo protege a los usuarios y sus datos, sino que también preserva la integridad y reputación de las aplicaciones y sistemas que creamos. Ignorar la seguridad durante el desarrollo puede llevar a vulnerabilidades explotables por atacantes, con consecuencias que van desde la pérdida de datos hasta graves problemas financieros y legales.</p>
+        </div>
+
+        <div class="section">
+            <h2>Vulnerabilidades Comunes en Aplicaciones Web</h2>
+            <p>Los programadores deben ser conscientes de las vulnerabilidades más frecuentes en las aplicaciones web:</p>
+            <ul>
+                <li><strong>Inyección SQL:</strong> Ocurre cuando datos maliciosos son insertados en consultas SQL, permitiendo a los atacantes acceder, modificar o eliminar datos de la base de datos. </li>
+                <li><strong>Cross-Site Scripting (XSS):</strong> Permite a los atacantes inyectar scripts maliciosos en páginas web vistas por otros usuarios. <span class="important">Escapa o sanitiza la salida de datos dinámicos en HTML.</span></li>
+                <li><strong>Cross-Site Request Forgery (CSRF):</strong> Obliga a los usuarios autenticados a realizar acciones no deseadas en una aplicación web en la que están logueados. <span class="important">Implementa tokens CSRF.</span></li>
+                <li><strong>Autenticación y Gestión de Sesiones Inseguras:</strong> Fallos en la autenticación o en la gestión de sesiones pueden permitir el acceso no autorizado a cuentas de usuario. <span class="important">Utiliza contraseñas seguras (hash), gestiona las sesiones correctamente y considera la autenticación de dos factores.</span></li>
+                <li><strong>Subida de Archivos Insegura:</strong> Permitir la subida de archivos sin validación adecuada puede llevar a la ejecución de código malicioso. <span class="important">Valida el tipo, tamaño y contenido de los archivos subidos.</span></li>
+                <li><strong>Desbordamiento de Búfer:</strong> Ocurre cuando un programa escribe más datos en un búfer de lo que se ha asignado, pudiendo sobrescribir áreas de memoria adyacentes. <span class="important">Ten cuidado con el manejo de la memoria en lenguajes como C/C++.</span></li>
+                <li><strong>Vulnerabilidades de Terceros (Dependencias):</strong> Las librerías y frameworks que utilizamos pueden tener vulnerabilidades. <span class="important">Mantén tus dependencias actualizadas.</span></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Prácticas de Programación Segura</h2>
+            <p>Implementar las siguientes prácticas puede reducir significativamente el riesgo de introducir vulnerabilidades:</p>
+            <ul>
+                <li><strong>Validación de Entradas:</strong> Siempre valida y sanitiza todos los datos proporcionados por el usuario (formularios, URLs, APIs, etc.) antes de procesarlos.</li>
+                <li><strong>Parametrización de Consultas:</strong> Utiliza consultas parametrizadas o prepared statements para prevenir la inyección SQL.</li>
+                <li><strong>Codificación de Salida:</strong> Escapa o codifica los datos dinámicos antes de mostrarlos en la interfaz de usuario para prevenir XSS.</li>
+                <li><strong>Implementación de Tokens CSRF:</strong> Utiliza tokens sincronizados para proteger contra ataques CSRF.</li>
+                <li><strong>Gestión Segura de Contraseñas:</strong> Almacena las contraseñas utilizando funciones de hash seguras (como bcrypt o Argon2) con "sal" (salt) únicas para cada contraseña.</li>
+                <li><strong>Control de Acceso:</strong> Implementa mecanismos de autorización robustos para asegurar que los usuarios solo puedan acceder a los recursos para los que tienen permiso.</li>
+                <li><strong>Manejo de Errores Seguro:</strong> Evita mostrar mensajes de error detallados en entornos de producción, ya que pueden revelar información sensible a los atacantes. Registra los errores de forma segura para su análisis.</li>
+                <li><strong>Principio de Mínimo Privilegio:</strong> Ejecuta los procesos con los mínimos permisos necesarios para su funcionamiento.</li>
+                <li><strong>Revisiones de Código de Seguridad:</strong> Realiza revisiones de código enfocadas en la seguridad para identificar posibles vulnerabilidades.</li>
+                <li><strong>Pruebas de Seguridad (Pentesting):</strong> Realiza pruebas de penetración para identificar y explotar vulnerabilidades en un entorno controlado.</li>
+                <li><strong>Mantener las Dependencias Actualizadas:</strong> Monitorea y actualiza regularmente las librerías y frameworks de terceros para corregir vulnerabilidades conocidas.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Herramientas y Recursos para la Ciberseguridad en Programación</h2>
+            <p>Existen diversas herramientas y recursos que pueden ayudar a los programadores a mejorar la seguridad de su código:</p>
+            <ul>
+                <li><strong>Linters y Analizadores Estáticos de Seguridad (SAST):</strong> Herramientas que analizan el código fuente en busca de posibles vulnerabilidades sin ejecutar el programa. Ejemplos: SonarQube, ESLint con plugins de seguridad.</li>
+                <li><strong>Análisis Dinámico de Seguridad de Aplicaciones (DAST):</strong> Herramientas que prueban la seguridad de una aplicación en tiempo de ejecución simulando ataques. Ejemplos: OWASP ZAP, Burp Suite.</li>
+                <li><strong>Gestores de Dependencias con Alertas de Seguridad:</strong> Herramientas que alertan sobre vulnerabilidades conocidas en las dependencias del proyecto. Ejemplos: Dependabot, Snyk.</li>
+                <li><strong>OWASP (Open Web Application Security Project):</strong> Una comunidad que proporciona guías, herramientas y recursos gratuitos sobre seguridad web.</li>
+                <li><strong>Cursos y Formación en Ciberseguridad para Desarrolladores:</strong> Plataformas como Coursera, Udemy y OWASP ofrecen cursos especializados.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Conclusión</h2>
+            <p>La ciberseguridad es una responsabilidad compartida, y los programadores juegan un papel crucial en la creación de software seguro. Al comprender las vulnerabilidades comunes, implementar prácticas de programación segura y utilizar las herramientas adecuadas, podemos construir aplicaciones más resilientes y proteger a nuestros usuarios de posibles amenazas.</p>
+        </div>
+    </div>
 </body>
 </html>
