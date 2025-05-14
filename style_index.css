@@ -1,9 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex; 
-    flex-direction: column;
+* {
+    box-sizing: border-box; /*esto sirve para definir los bordes de las cajas y los margenes que queremos que tengan dentro de la pagina */
+    margin:0%;
+    padding: 0%;
 }
+<<<<<<< HEAD
 
 .contenedor {
     max-width: 1200px;
@@ -99,39 +99,78 @@ footer {
     .main-content {
         flex-direction: column;
     }
+=======
+body{
+    font-family: 'Times New Roman'; /*esto sirve para definir fuente de letra y el tamaño */
+    font-size: 1.5rem;
+    min-width: 100%;
+    color: azure;
+    text-align: justify;
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     
-    .nav-contenedor {
-        justify-content: center;
-        gap: 10px;
-    }
+}
+.grid-container > * {  /*esto sirve para darle sobra al espacio entre las cajas para definir el tamaño del borde*/
+    box-shadow: -1px 1px 7px 0px rgba( rgb(0, 0, 0));
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+.header {         /*esto sirve para definir el color de las cajas en la pagina web*/
+    grid-area: header;
+    background-color:rgb(20, 61, 96);
     
-    .menu {
-        justify-content: center;
+}
+.navbar {     
+    grid-area: navbar;
+    background-color:rgb(160, 200, 120);
+}
+.main {        
+    grid-area: main;
+    background-color:rgb(39, 102, 123);
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color:rgb(160, 200, 120);
+}
+.footer {
+    grid-area: footer ;
+    background-color:rgb(20, 61, 96);
+}
+.grid-container{      /*esto lo usamos para agragarle el grid a nuestra pagina, definir el espacio y el orden que queremos en tamaño movil */
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "header"
+    "navbar"
+    "main"
+    "footer";
+}
+@media (min-width:600px ) {   /* Este es para aplicarlo en modo tablet esto sirve para mas de 600 pixeles de ancho el color de fondo cambia*/
+    .grid-container {
+        background-color: rgb(240, 240, 230);
+     /* grid-template-columns:200px auto ;
+      grid-template-rows: 100px 100px auto 100px;
+      grid-template-areas: 
+        "header header"
+        "navbar navbar"                            
+        "sidebar main"
+        "footer footer";*/       /* hay dos formas de poderles agregar el tamaño a columnas y a filas, la de abajo es mas sencilla*/        
+         grid-template: 
+        "header  header" auto
+        "main    navbar" auto 
+        "footer  footer" 50px /
+         380px    380px;
+        
     }
 }
-
-@media (max-width: 480px) {
-    .menu {
-        flex-direction: column;
-        text-align: center;
+@media (min-width:900px) {   /* modo escritorio esto sirve para mas de 900 pixeles de ancho el color de fondo cambia, aca se  le agregan 3 columnas*/
+    .grid-container {
+        background-color: rgb(241, 242, 209);
+         grid-template: 
+        "header header header " auto
+        " navbar  navbar  navbar " auto
+        " main     main   main" 300px
+        "footer   footer  footer" 50px /
+          auto    auto    auto ;
     }
 }
-
-.tabla {
-    width: 100%;
-    border-collapse: collapse; 
-    margin-top: 20px;
-}
-
-.tabla th, .tabla td {
-    border: 1px solid #ddd; 
-    padding: 8px; 
-    text-align: left; 
-}
-
-.tabla th {
-    background-color: #EC7FA9;
-    color: #FFFFFF;
-}
-
-
