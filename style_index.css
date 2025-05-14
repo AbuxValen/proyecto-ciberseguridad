@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     box-sizing: border-box; /*esto sirve para definir los bordes de las cajas y los margenes que queremos que tengan dentro de la pagina */
     margin:0%;
@@ -62,7 +62,7 @@ body{
         "header  header" auto
         "main    navbar" auto 
         "footer  footer" 50px /
-         500px    500px;
+         380px    380px;
         
     }
 }
@@ -77,127 +77,3 @@ body{
           auto    auto    auto ;
     }
 }
-=======
-/* Reset general */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #DDEB9D, #A0C878);
-    color: #333;
-    padding-top: 70px;
-}
-
-/* ===== NAVIGATION BAR ===== */
-nav {
-    background-color: #27667B;
-    padding: 1rem 0;
-    border-bottom: 2px solid #143D60;
-    font-size: 30px;
-}
-
-.nav-contenedor {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 0 40px;
-    gap: 20px;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: start;
-}
-
-.menu {
-    list-style: none;
-    display: grid; /* Cambié el display a grid */
-    grid-template-columns: repeat(4, auto);
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    justify-self: end;
-}
-
-.menu a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: #143D60;
-    border-radius: 3px;
-}
-
-h1 {
-    text-align: center;
-    color: #BE5985;
-    font-size: 3.2em;
-    margin: 40px 0 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    letter-spacing: 1px;
-}
-
-/* ===== GALERÍA DE IMÁGENES ===== */
-.gallery {
-    padding: 20px 40px 60px;
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start; /* Alinea las imágenes a la izquierda */
-    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-    gap: 20px; /* Espaciado entre las imágenes */
-}
-
-.item {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-    animation: fadeIn 1s ease;
-    padding-bottom: 20px;
-}
-
-.item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
-}
-
-.item img {
-    width: auto; /* Deja que las imágenes mantengan su tamaño original */
-    height: auto; /* Mantiene la proporción original de las imágenes */
-    object-fit: contain; /* Asegura que las imágenes mantengan su proporción sin recortes */
-    display: block;
-    margin: 0 auto;
-}
-
-.item h2 {
-    color: #27667B;
-    font-size: 1.4em;
-    margin: 18px 15px 10px;
-    text-align: center;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ===== FOOTER ===== */
-footer {
-    background-color: #DDEB9D;
-    color: #143D60;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
->>>>>>> 4042aaa70f4df857c3ea1e582db6fd66e038df3a
