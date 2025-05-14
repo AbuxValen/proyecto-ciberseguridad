@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+ody {
+    font-family: sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #C1D66F;
+    color: #143D60;
+}
+
+nav {
+    background-color: #7DBD57;
+    padding: 1rem 0;
+    border-bottom: 2px solid #C1D66F;
+=======
 body {
     font-family: sans-serif;
     margin: 20px;
@@ -11,6 +25,7 @@ nav {
     ; 
     padding: 1rem 0;
     border-bottom: 2px solid #FFEDFA; 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     font-size: 30px;
 }
 
@@ -30,13 +45,25 @@ nav {
 }
 
 .menu a {
+<<<<<<< HEAD
+    color: #143D60;
+=======
     color: #EC7FA9; 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     text-decoration: none;
     padding: 5px 10px;
     transition: all 0.3s ease;
 }
 
 .menu a:hover {
+<<<<<<< HEAD
+    background-color: #2E5C6A;
+    border-radius: 3px;
+}
+
+h1, h2 {
+    color: #4C9A46;
+=======
     background-color: #000000;
     border-radius: 3px;
 }
@@ -44,12 +71,17 @@ nav {
 
 h1, h2 {
     color: #ff69b4; 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
 }
 
 .container {
     max-width: 960px;
     margin: 0 auto;
+<<<<<<< HEAD
+    background-color: #ffffff;
+=======
     background-color: #fff;
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -57,7 +89,11 @@ h1, h2 {
 
 .section {
     margin-bottom: 30px;
+<<<<<<< HEAD
+    border-bottom: 1px solid #7DBD57;
+=======
     border-bottom: 1px solid #f9a7b0; 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     padding-bottom: 20px;
 }
 
@@ -66,7 +102,11 @@ h1, h2 {
 }
 
 code {
+<<<<<<< HEAD
+    background-color: #2E5C6A;
+=======
     background-color: #BE5985
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
     padding: 5px 10px;
     border-radius: 3px;
     font-family: monospace;
@@ -75,12 +115,21 @@ code {
 ul {
     list-style-type: disc;
     margin-left: 20px;
+<<<<<<< HEAD
+    color: #4C9A46;
+=======
     color: #f78fb3; 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
 }
 
 .important {
     font-weight: bold;
+<<<<<<< HEAD
+    color: #143D60;
+}
+=======
     color: #e64980; 
 }
 
 
+>>>>>>> cf9bcec1f3a9ab36e912d9f6cc8216f548322715
