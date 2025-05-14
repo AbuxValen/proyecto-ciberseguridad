@@ -1,4 +1,4 @@
-/* Reset general */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,16 +7,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(120deg, #FFEDFA, #FFB8E0);
+    background: linear-gradient(120deg, #DDEB9D, #A0C878);
     color: #333;
     padding-top: 70px;
 }
 
-/* ===== NAVIGATION BAR ===== */
 nav {
-    background-color: #EC7FA9;
+    background-color: #27667B;
     padding: 1rem 0;
-    border-bottom: 2px solid #BE5985;
+    border-bottom: 2px solid #143D60;
     font-size: 30px;
 }
 
@@ -52,20 +51,19 @@ nav {
 }
 
 .menu a:hover {
-    background-color: black;
+    background-color: #143D60;
     border-radius: 3px;
 }
 
 h1 {
     text-align: center;
-    color: #BE5985;
+    color: #27667B;
     font-size: 3.2em;
     margin: 40px 0 20px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     letter-spacing: 1px;
 }
 
-/* ===== GALERÍA DE IMÁGENES ===== */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -74,7 +72,6 @@ h1 {
     max-width: 1300px;
     margin: auto;
 }
-
 
 .item {
     background: white;
@@ -86,12 +83,10 @@ h1 {
     padding-bottom: 20px;
 }
 
-
 .item:hover {
     transform: translateY(-10px);
     box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
-
 
 .item img {
     width: 100%;
@@ -101,24 +96,21 @@ h1 {
     margin: 0 auto;
 }
 
-
 .item h2 {
-    color: #EC7FA9;
+    color: #27667B;
     font-size: 1.4em;
     margin: 18px 15px 10px;
     text-align: center;
 }
-
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-
 footer {
-    background-color: #FFEDFA;
-    color: #BE5985;
+    background-color: #DDEB9D;
+    color: #143D60;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
